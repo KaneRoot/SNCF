@@ -1,0 +1,9 @@
+Projet d'UML
+
+mettre à jour : 
+
+git pull # Pour prendre les dernières mises à jour
+git commit "nomdufichier" -m "message qui dit pourquoi tu fais une maj"
+git commit -am "message pour tous les fichiers changés/ajoutés"
+git push #origin master
+
