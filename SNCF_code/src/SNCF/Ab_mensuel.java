@@ -7,6 +7,11 @@ package SNCF;
 public class Ab_mensuel extends Abonnement {
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.0E866128-8639-2535-D4C3-885A8B5A11F0]
+    // </editor-fold> 
+    private static int tarifKm;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.BF51FC02-37FE-7AF3-4C2E-6100E5C74582]
     // </editor-fold> 
     private int num_mois;
@@ -14,7 +19,11 @@ public class Ab_mensuel extends Abonnement {
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.C8E56300-BAEE-B0E3-F890-E5CBB226967E]
     // </editor-fold> 
-    public Ab_mensuel (int numeroAb, String nom, int mois, Gare gare) {
+    public Ab_mensuel (int numeroAb, String nom, int mois, Gare_distante gareD) {
+        this.setNum_abonnement(numeroAb);
+        this.setNom_abonne(nom);
+        this.num_mois = mois;
+        this.setGare_distante(gareD);
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
@@ -35,26 +44,58 @@ public class Ab_mensuel extends Abonnement {
     // #[regen=yes,id=DCE.EF938385-29BB-76AF-32BF-C9680C7D98D9]
     // </editor-fold> 
     public void reconduire () {
+        if(this.num_mois==12)
+        {
+            this.num_mois=1;
+        }
+        else
+        {
+            this.num_mois++;
+        }
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.C878E5BF-7897-D1E6-4AE3-0EE90E54E4F1]
     // </editor-fold> 
     public String getMention () {
-        return null;
+        return "Abonnement Mensuel";
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.9209C915-553A-D3EA-7E15-FB10246115D7]
     // </editor-fold> 
     public String description () {
-        return null;
+        String res = "";
+        res += "Numéro de l'abonnement : "+this.getNum_abonnement()+"\n";
+        res += "Nom de l'abonné : "+this.getNom_abonne()+"\n";
+        res += "Type : "+this.getMention()+"\n";
+        res += "Gare émettrice : "+G_gares.getGare_emettrice().getNom()+ " ("+G_gares.getGare_emettrice().getAdresse()+")";
+        res += "Gare distante : "+this.getGare_distante().getNom()+"\n";
+        res += "Distance : "+this.getGare_distante().getDistance()+"\n";
+        res += "Cout de l'abonnement : "+this.calcul_cout_abonnement()+"\n";
+        res += "Validité : mois "+this.num_mois+"\n";
+        return res;
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.0A28974C-C371-E8B1-4118-588C2DC60593]
     // </editor-fold> 
-    public void calcul_cout_abonnement () {
+    public float calcul_cout_abonnement () {
+        return (G_abonnements.getFrais_dossier()+Ab_mensuel.getTarifKm()*this.getGare_distante().getDistance());
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.9E991F77-87CC-8AEE-F55E-E097EAD5DA03]
+    // </editor-fold> 
+    public static int getTarifKm () {
+        return tarifKm;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.CBAA41FC-6E5A-5D15-7066-F00C84F2F5E6]
+    // </editor-fold> 
+    public static void setTarifKm (int val) {
+        Ab_mensuel.tarifKm = val;
     }
 
 }

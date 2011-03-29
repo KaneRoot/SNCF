@@ -15,6 +15,8 @@ public class Gare_distante extends Gare {
     // #[regen=yes,id=DCE.A29D55FB-48B0-6918-B6B1-87C375E45FAC]
     // </editor-fold> 
     public Gare_distante (String nom, int distance) {
+        this.setNom(nom);
+        this.setDistance(distance);
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
@@ -29,6 +31,29 @@ public class Gare_distante extends Gare {
     // </editor-fold> 
     public void setDistance (int val) {
         this.distance = val;
+    }
+
+    @Override
+    public String getAdresse() {
+        return "";
+    }
+
+    @Override
+    public boolean equals(Object g)
+    {
+        boolean res = false;
+        if(g != null && g instanceof Gare_distante)
+        {
+            Gare_distante g2 = (Gare_distante) g;
+            if(g2.getNom().equals(this.getNom()))
+            {
+                if(g2.getDistance()==this.distance)
+                {
+                    res = true;
+                }
+            }
+        }
+        return res;
     }
 
 }
