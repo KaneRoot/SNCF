@@ -7,11 +7,6 @@ package SNCF;
 public abstract class Abonnement {
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.FA71F6A6-70D1-DC60-C96D-95069C99A9C8]
-    // </editor-fold> 
-    private int tarif_km;
-
-    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.076005E9-ECB7-9503-B2E3-F8066A341697]
     // </editor-fold> 
     private int num_abonnement;
@@ -22,53 +17,9 @@ public abstract class Abonnement {
     private String nom_abonne;
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.D7247F2D-112B-93A5-17A6-45D781340310]
-    // </editor-fold> 
-    private int longueur_trajet;
-
-    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.9F28C708-5CB2-FBA1-6166-214E9F8C53F1]
-    // </editor-fold> 
-    private int cout_abonnement;
-
-    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.AC34DC13-85E0-7097-A241-04A0A65C1C14]
+    // #[regen=yes,id=DCE.95B7EA2C-67D3-B71A-E9F7-A7D07B9D3FA1]
     // </editor-fold> 
     private Gare gare_distante;
-
-    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.DB225D6D-66C3-F8CD-242D-1CBB5084CDE9]
-    // </editor-fold> 
-    public Abonnement (int num) {
-    }
-
-    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,regenBody=yes,id=DCE.603A51BA-DBF7-CD3D-D3E8-295320F21105]
-    // </editor-fold> 
-    public int getCout_abonnement () {
-        return cout_abonnement;
-    }
-
-    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,regenBody=yes,id=DCE.670A5732-D598-437E-0B45-4CDDF94216C7]
-    // </editor-fold> 
-    public void setCout_abonnement (int val) {
-        this.cout_abonnement = val;
-    }
-
-    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,regenBody=yes,id=DCE.E0F2681C-5892-D707-B978-1B92A51DBB9E]
-    // </editor-fold> 
-    public int getLongueur_trajet () {
-        return longueur_trajet;
-    }
-
-    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,regenBody=yes,id=DCE.27F19A2A-CB3B-03B5-36F9-99BCB3ED6E69]
-    // </editor-fold> 
-    public void setLongueur_trajet (int val) {
-        this.longueur_trajet = val;
-    }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,regenBody=yes,id=DCE.5A6D049D-DCEF-529A-7C5B-DDC94CCCCDE4]
@@ -99,20 +50,6 @@ public abstract class Abonnement {
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,regenBody=yes,id=DCE.76F66D5A-B389-8F73-50A7-8CF0908DAFE7]
-    // </editor-fold> 
-    public int getTarif_km () {
-        return tarif_km;
-    }
-
-    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,regenBody=yes,id=DCE.35EB0E19-6BD9-505E-35B8-9FDD961C53E3]
-    // </editor-fold> 
-    public void setTarif_km (int val) {
-        this.tarif_km = val;
-    }
-
-    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.1968C76C-E776-0B9A-F86E-FE2D728E7D0E]
     // </editor-fold> 
     public abstract String getMention ();
@@ -125,17 +62,17 @@ public abstract class Abonnement {
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.1EAF2A7E-8726-5B55-7D57-DA8EA16C39B9]
     // </editor-fold> 
-    public abstract void calcul_cout_abonnement ();
+    public abstract float calcul_cout_abonnement ();
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,regenBody=yes,id=DCE.0FB13DF9-454C-296D-8AB6-740C5FAF687F]
+    // #[regen=yes,regenBody=yes,id=DCE.F7826597-CEA0-7498-AB87-1913D4D0A519]
     // </editor-fold> 
     public Gare getGare_distante () {
         return gare_distante;
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,regenBody=yes,id=DCE.5994A23E-0FB2-0439-FEBB-05B9BB061C70]
+    // #[regen=yes,regenBody=yes,id=DCE.82D2DBFB-80DF-7F1D-7146-F5CA1443AEE2]
     // </editor-fold> 
     public void setGare_distante (Gare val) {
         this.gare_distante = val;

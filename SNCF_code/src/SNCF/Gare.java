@@ -12,12 +12,6 @@ public abstract class Gare {
     private String nom;
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.02C4486C-6553-18BE-48C5-91B44ECEA4E5]
-    // </editor-fold> 
-    public Gare (String nom, int distance) {
-    }
-
-    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,regenBody=yes,id=DCE.1B6ECC07-A417-7618-7973-3689FFC0BC34]
     // </editor-fold> 
     public String getNom () {
@@ -30,6 +24,16 @@ public abstract class Gare {
     public void setNom (String val) {
         this.nom = val;
     }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.4648A08A-ED71-9865-F798-5FFE936F82CE]
+    // </editor-fold> 
+    public abstract String getAdresse ();
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.AD027966-10C1-D5AE-631F-E959F66D5A0E]
+    // </editor-fold> 
+    public abstract int getDistance ();
 
 }
 
