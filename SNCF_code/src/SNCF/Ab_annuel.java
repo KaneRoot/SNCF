@@ -1,6 +1,8 @@
 package SNCF;
 
+import java.text.DateFormat;
 import java.util.Date;
+import java.util.Locale;
 
 
 // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
@@ -57,11 +59,21 @@ public class Ab_annuel extends Abonnement {
         res += "Numéro de l'abonnement : "+this.getNum_abonnement()+"\n";
         res += "Nom de l'abonné : "+this.getNom_abonne()+"\n";
         res += "Type : "+this.getMention()+"\n";
-        res += "Gare émettrice : "+G_gares.getGare_emettrice().getNom()+ " ("+G_gares.getGare_emettrice().getAdresse()+")";
+        res += "Gare émettrice : "+G_gares.getGare_emettrice().getNom()+ " ("+G_gares.getGare_emettrice().getAdresse()+")\n";
         res += "Gare distante : "+this.getGare_distante().getNom()+"\n";
         res += "Distance : "+this.getGare_distante().getDistance()+"\n";
         res += "Cout de l'abonnement : "+this.calcul_cout_abonnement()+"\n";
-        res += "Validité : "+this.date_fin+"\n";
+
+        // 1. Choix de la langue
+        Locale locale = Locale.getDefault();
+
+        /** 2. Construction du DateFormat en choisiant un format :
+         * SHORT = 01/01/2002
+         * FULL = lundi 1 janvier 2002
+         */
+        DateFormat dateFormat = DateFormat.getDateInstance(DateFormat.FULL, locale);
+        
+        res += "Validité : "+dateFormat.format(this.date_fin)+"\n";
         return res;
     }
 

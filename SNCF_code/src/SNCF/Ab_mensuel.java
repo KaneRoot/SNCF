@@ -69,7 +69,7 @@ public class Ab_mensuel extends Abonnement {
         res += "Numéro de l'abonnement : "+this.getNum_abonnement()+"\n";
         res += "Nom de l'abonné : "+this.getNom_abonne()+"\n";
         res += "Type : "+this.getMention()+"\n";
-        res += "Gare émettrice : "+G_gares.getGare_emettrice().getNom()+ " ("+G_gares.getGare_emettrice().getAdresse()+")";
+        res += "Gare émettrice : "+G_gares.getGare_emettrice().getNom()+ " ("+G_gares.getGare_emettrice().getAdresse()+")\n";
         res += "Gare distante : "+this.getGare_distante().getNom()+"\n";
         res += "Distance : "+this.getGare_distante().getDistance()+"\n";
         res += "Cout de l'abonnement : "+this.calcul_cout_abonnement()+"\n";

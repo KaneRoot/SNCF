@@ -67,6 +67,7 @@ public class G_abonnements {
     // </editor-fold> 
     public void nouvelAboA (String nom, Date d, Gare_distante g) {
         this.listeAbo.add(new Ab_annuel(G_abonnements.compteur, nom, d, g));
+        G_abonnements.compteur++;
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
@@ -74,6 +75,7 @@ public class G_abonnements {
     // </editor-fold> 
     public void nouvelAboM (String nom, int numMois, Gare_distante g) {
         this.listeAbo.add(new Ab_mensuel(G_abonnements.compteur, nom, numMois, g));
+        G_abonnements.compteur++;
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
