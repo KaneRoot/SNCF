@@ -25,15 +25,5 @@ public abstract class Gare {
         this.nom = val;
     }
 
-    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.4648A08A-ED71-9865-F798-5FFE936F82CE]
-    // </editor-fold> 
-    public abstract String getAdresse ();
-
-    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.AD027966-10C1-D5AE-631F-E959F66D5A0E]
-    // </editor-fold> 
-    public abstract int getDistance ();
-
 }
 

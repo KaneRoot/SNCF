@@ -112,13 +112,14 @@ public class TestSNCF {
         System.out.println("Nombre total d'abonnements : "+this.gestionAbo.getListeAbo().size()+"\n");
     }
 
-    // 8. Modification des paramètres frais de dossier, tarifKmAnnuel, tarifKmMensuel, mention (?)
-    public void modifParams(int fraisD, int TKmA, int TKmM, String mention)
+    // 8. Modification des paramètres frais de dossier, tarifKmAnnuel, tarifKmMensuel, mention
+    public void modifParams(int fraisD, int TKmA, int TKmM, String mentionA, String mentionM)
     {
         G_abonnements.setFrais_dossier(fraisD);
         Ab_mensuel.setTarifKm(TKmM);
         Ab_annuel.setTarifKm(TKmA);
-        // Mention ?
+        Ab_mensuel.setMention(mentionM);
+        Ab_annuel.setMention(mentionA);
     }
 
     // 9. Nouvelle gare avec sa distance

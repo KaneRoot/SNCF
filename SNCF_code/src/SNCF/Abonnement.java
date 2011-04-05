@@ -19,7 +19,7 @@ public abstract class Abonnement {
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.95B7EA2C-67D3-B71A-E9F7-A7D07B9D3FA1]
     // </editor-fold> 
-    private Gare gare_distante;
+    private Gare_distante gare_distante;
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,regenBody=yes,id=DCE.5A6D049D-DCEF-529A-7C5B-DDC94CCCCDE4]
@@ -67,14 +67,14 @@ public abstract class Abonnement {
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,regenBody=yes,id=DCE.F7826597-CEA0-7498-AB87-1913D4D0A519]
     // </editor-fold> 
-    public Gare getGare_distante () {
+    public Gare_distante getGare_distante () {
         return gare_distante;
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,regenBody=yes,id=DCE.82D2DBFB-80DF-7F1D-7146-F5CA1443AEE2]
     // </editor-fold> 
-    public void setGare_distante (Gare val) {
+    public void setGare_distante (Gare_distante val) {
         this.gare_distante = val;
     }
 

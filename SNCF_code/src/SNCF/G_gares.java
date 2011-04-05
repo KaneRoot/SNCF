@@ -35,8 +35,8 @@ public class G_gares {
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.92F72C76-5D14-FD4C-2C73-7DD3165668CA]
     // </editor-fold> 
-    public Gare getGare (String nom) {
-        int i; Gare res = null;
+    public Gare_distante getGare (String nom) {
+        int i; Gare_distante res = null;
         for(i=0;i<this.listeGare.size();i++)
         {
             if(this.listeGare.get(i).getNom().equals(nom))

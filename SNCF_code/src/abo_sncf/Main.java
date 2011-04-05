@@ -16,19 +16,26 @@ public class Main {
      */
     public static void main(String[] args) {
 
+        // Jeu de test public 
         TestSNCF t = new TestSNCF();
         t.initJeuEssai();
         t.listerGares();
         t.listerAbos();
+        t.reconduireX(3);
+        t.descAboX(3);
+        t.descAboNom("Bob");
+        t.distanceGareNom("str");
         t.nbTotalAbo();
-        t.modifParams(30, 10, 3, null);
-        t.newGareD("test", 10);
-        t.newAboM("quentin", 10, "str");
-        t.newAboA("gross", "28/11/1991", "col");
-        t.reconduireX(0);
-        t.reconduireX(0);
-        t.listerGares();
+        t.modifParams(20, 40, 4, "year", "month");
         t.listerAbos();
+        t.newGareD("mul", 60);
+        t.listerGares();
+        t.newAboM("max",12,"mul");
+        t.newAboA("Sue", "31/09/09","str");
+        t.nbTotalAbo();
+        t.listerAbos();
+        t.reconduireX(6);
+        t.descAboX(6);      
         t.quitter();
     }
 

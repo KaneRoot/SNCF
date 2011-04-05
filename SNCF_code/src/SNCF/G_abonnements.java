@@ -9,9 +9,10 @@ import java.util.Date;
 public class G_abonnements {
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,id=DCE.CCD8609F-283D-BE47-75C3-4E7B776BBB84]
+    // #[regen=yes,id=DCE.513DCB47-0A0D-7B1E-4975-2160FABC5006]
     // </editor-fold> 
     private ArrayList<Abonnement> listeAbo;
+
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.8C2C0968-67B1-00E1-47ED-6BFF9EA59274]
@@ -28,7 +29,7 @@ public class G_abonnements {
     // </editor-fold> 
     public G_abonnements (int frais_dossier, int tarifKmA, int tarifKmM) {
         G_abonnements.frais_dossier = frais_dossier;
-        G_abonnements.compteur = 0;
+        G_abonnements.compteur = 1;
         this.setTarifKmA(tarifKmA);
         this.setTarifKmM(tarifKmM);
         this.listeAbo = new ArrayList<Abonnement>();
@@ -119,6 +120,10 @@ public class G_abonnements {
             }
         }
         return res;
+    }
+
+     public int nbAbos (Gare_emettrice g) {
+        return this.listeAbo.size();
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 

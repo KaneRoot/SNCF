@@ -11,6 +11,11 @@ import java.util.Locale;
 public class Ab_annuel extends Abonnement {
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.7AB66F89-F54B-5BA0-F53F-77E0FDE22366]
+    // </editor-fold> 
+    private static String mention = "Abonnement annuel";
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.9EC9EA04-09AA-036D-A127-F559115A3A24]
     // </editor-fold> 
     private static int tarifKm;
@@ -48,7 +53,7 @@ public class Ab_annuel extends Abonnement {
     // #[regen=yes,id=DCE.E0E9604A-6D63-DA7D-877E-88DEE1007475]
     // </editor-fold> 
     public String getMention () {
-        return "Abonnement Annuel";
+        return Ab_annuel.mention;
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
@@ -96,6 +101,13 @@ public class Ab_annuel extends Abonnement {
     // </editor-fold> 
     public static void setTarifKm (int val) {
         Ab_annuel.tarifKm = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.64FA862A-E7EA-B745-F984-9D2B8974F1F6]
+    // </editor-fold> 
+    public static void setMention (String val) {
+        Ab_annuel.mention = val;
     }
 
 }

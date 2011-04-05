@@ -20,7 +20,7 @@ public class Gare_distante extends Gare {
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,regenBody=yes,id=DCE.ABA64349-106B-C039-AA12-4DE969E1869C]
+    // #[regen=yes,regenBody=yes,id=DCE.0BFE53E7-EA27-6643-8E22-2AA5F9B061C2]
     // </editor-fold> 
     public int getDistance () {
         return distance;
@@ -31,11 +31,6 @@ public class Gare_distante extends Gare {
     // </editor-fold> 
     public void setDistance (int val) {
         this.distance = val;
-    }
-
-    @Override
-    public String getAdresse() {
-        return "";
     }
 
     @Override

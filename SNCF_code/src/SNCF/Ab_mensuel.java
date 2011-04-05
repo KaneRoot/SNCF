@@ -7,6 +7,11 @@ package SNCF;
 public class Ab_mensuel extends Abonnement {
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.0D95F58C-EAA2-EA4E-E133-FB2731FAE79D]
+    // </editor-fold> 
+    private static String mention = "Abonnement mensuel";
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.0E866128-8639-2535-D4C3-885A8B5A11F0]
     // </editor-fold> 
     private static int tarifKm;
@@ -58,7 +63,7 @@ public class Ab_mensuel extends Abonnement {
     // #[regen=yes,id=DCE.C878E5BF-7897-D1E6-4AE3-0EE90E54E4F1]
     // </editor-fold> 
     public String getMention () {
-        return "Abonnement Mensuel";
+        return Ab_mensuel.mention;
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
@@ -96,6 +101,13 @@ public class Ab_mensuel extends Abonnement {
     // </editor-fold> 
     public static void setTarifKm (int val) {
         Ab_mensuel.tarifKm = val;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.C77E6564-78A8-9682-5EA3-D70E44D057AE]
+    // </editor-fold> 
+    public static void setMention (String val) {
+        Ab_mensuel.mention = val;
     }
 
 }

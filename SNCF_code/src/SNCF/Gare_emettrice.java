@@ -20,10 +20,10 @@ public class Gare_emettrice extends Gare {
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
-    // #[regen=yes,regenBody=yes,id=DCE.43D36875-6EE0-269A-F6F9-7BB392253ABC]
+    // #[regen=yes,regenBody=yes,id=DCE.007BABA0-3099-D815-D2E0-E3CE4A8DC2FF]
     // </editor-fold> 
     public String getAdresse () {
-        return adresse;
+        return this.adresse;
     }
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
@@ -31,11 +31,6 @@ public class Gare_emettrice extends Gare {
     // </editor-fold> 
     public void setAdresse (String val) {
         this.adresse = val;
-    }
-
-    @Override
-    public int getDistance() {
-        return 0;
     }
 
     @Override
