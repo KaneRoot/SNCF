@@ -166,5 +166,7 @@ public class TestSNCF {
     public void quitter()
     {
         System.exit(0);
+        this.gestionAbo = null;
+        this.gestionGare = null;
     }
 }
