@@ -98,7 +98,7 @@ public class TestSNCF {
         int dist = this.gestionGare.getGare(nom).getDistance();
         if(dist != 0)
         {
-            System.out.println(dist);
+            System.out.println("distance : "+dist);
         }
         else
         {
