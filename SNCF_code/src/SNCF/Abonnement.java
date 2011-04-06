@@ -21,6 +21,7 @@ public abstract class Abonnement {
     // </editor-fold> 
     private Gare_distante gare_distante;
 
+
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,regenBody=yes,id=DCE.5A6D049D-DCEF-529A-7C5B-DDC94CCCCDE4]
     // </editor-fold> 

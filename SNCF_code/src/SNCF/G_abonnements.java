@@ -13,7 +13,6 @@ public class G_abonnements {
     // </editor-fold> 
     private ArrayList<Abonnement> listeAbo;
 
-
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.8C2C0968-67B1-00E1-47ED-6BFF9EA59274]
     // </editor-fold> 
@@ -23,6 +22,7 @@ public class G_abonnements {
     // #[regen=yes,id=DCE.6EF5DF5E-6C83-2CC8-7088-C99AA5F6818B]
     // </editor-fold> 
     private static int frais_dossier;
+   
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.2DE490B6-567F-E9F1-A6D4-68A7338F97BE]

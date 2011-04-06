@@ -33,6 +33,7 @@ public class Gare_distante extends Gare {
         this.distance = val;
     }
 
+
     @Override
     public boolean equals(Object g)
     {

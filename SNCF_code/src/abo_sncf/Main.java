@@ -5,6 +5,8 @@
 
 package abo_sncf;
 
+import SNCF.*;
+
 /**
  *
  * @author kane
