@@ -1,0 +1,59 @@
+package SNCF;
+
+import java.util.ArrayList; 
+
+// <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+// #[regen=yes,id=DCE.5493982B-6C55-0EA7-EED4-9E61FB4BF40F]
+// </editor-fold> 
+public class G_gares {
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.16DC16A2-54F9-C71F-BBB2-8498F0852486]
+    // </editor-fold> 
+    private ArrayList<Gare> listeGare;
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.C29F47CF-3D1A-D076-1EF1-7C2763B55661]
+    // </editor-fold> 
+    public G_gares () {
+        this.listeGare = new ArrayList<Gare>();
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.9A3E1572-0D83-E34C-949A-3A21C6959E6F]
+    // </editor-fold> 
+    public void nouvelleGare (String nom, int distance) {
+        this.listeGare.add(new Gare_distante(nom,distance));
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,id=DCE.92F72C76-5D14-FD4C-2C73-7DD3165668CA]
+    // </editor-fold> 
+    public Gare getGare (String nom) {
+        int i; Gare res = null;
+        for(i=0;i<this.listeGare.size();i++)
+        {
+            if(this.listeGare.get(i).getNom().equals(nom))
+            {
+                res = this.listeGare.get(i);
+            }
+        }
+        return res;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.96C4B0CE-5E8C-7D2A-DF40-EA9F591C5F49]
+    // </editor-fold> 
+    public ArrayList<Gare> getListeGare () {
+        return listeGare;
+    }
+
+    // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
+    // #[regen=yes,regenBody=yes,id=DCE.E9BA57E5-8B7F-EC51-5400-B5ABA19DA041]
+    // </editor-fold> 
+    public void setListeGare (ArrayList<Gare> val) {
+        this.listeGare = val;
+    }
+
+}
+
